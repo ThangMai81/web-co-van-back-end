@@ -1,4 +1,4 @@
-const Testimonial = require("../models/testimonial.model");
+const Testimonial = require("../models/Testimonial.model");
 const cloudinary = require("../config/cloudinary");
 
 // GET /api/testimonials - danh sách đầy đủ (cho trang /cau-chuyen-chuyen-hoa)
