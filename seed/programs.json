@@ -1,0 +1,157 @@
+[
+  {
+    "title": "Chinh Phục Fansipan - Nóc Nhà Đông Dương",
+    "category": "leo-nui",
+    "status": "past",
+    "format": "offline",
+    "location": "Fansipan, Lào Cai",
+    "schedule": "Đã diễn ra tháng 9/2026, 3 ngày 2 đêm",
+    "theme": "Mỗi bước chân là một lần vượt qua giới hạn của chính mình",
+    "description": "Hành trình chinh phục đỉnh Fansipan 3.143m - nơi những học viên Sunshine Center không chỉ chạm tới nóc nhà Đông Dương, mà còn chạm tới phiên bản mạnh mẽ hơn của chính mình.",
+    "highlights": [
+      "Vượt qua giới hạn thể chất và tinh thần giữa thiên nhiên hùng vĩ",
+      "Gắn kết đồng đội qua từng chặng đường khó khăn",
+      "Workshop chia sẻ cảm xúc ngay trên đỉnh núi"
+    ],
+    "coverImage": "https://res.cloudinary.com/demo/image/upload/sunshine-center/programs/fansipan-cover.jpg",
+    "videoUrl": "https://www.youtube.com/watch?v=placeholder-fansipan",
+    "gallery": [
+      "https://res.cloudinary.com/demo/image/upload/sunshine-center/programs/fansipan-1.jpg",
+      "https://res.cloudinary.com/demo/image/upload/sunshine-center/programs/fansipan-2.jpg",
+      "https://res.cloudinary.com/demo/image/upload/sunshine-center/programs/fansipan-3.jpg"
+    ],
+    "stats": [
+      { "label": "Độ cao", "value": "3.143m" },
+      { "label": "Thời gian", "value": "3 ngày 2 đêm" },
+      { "label": "Thành viên", "value": "24 người" }
+    ],
+    "featured": true,
+    "order": 1
+  },
+  {
+    "title": "Kinabalu - Gặp Gỡ Chính Mình",
+    "category": "leo-nui",
+    "status": "past",
+    "format": "offline",
+    "location": "Mount Kinabalu, Malaysia",
+    "schedule": "Đã diễn ra tháng 7/2026, 4 ngày 3 đêm",
+    "theme": "Gặp gỡ chính mình",
+    "description": "Không phải một chuyến leo núi thông thường - đây là hành trình nội tâm được ẩn dụ qua từng bước chân trên Kinabalu. Mỗi chặng đường là một lần nhìn lại, lắng nghe và gặp gỡ phiên bản sâu thẳm nhất bên trong mình.",
+    "highlights": [
+      "Workshop 'gặp lại chính mình' trước khi khởi hành",
+      "Thực hành kỹ thuật thở và tỉnh thức trong từng bước leo",
+      "Khoảnh khắc chạm đỉnh - đối diện và ôm lấy chính mình"
+    ],
+    "coverImage": "https://res.cloudinary.com/demo/image/upload/sunshine-center/programs/kinabalu-cover.jpg",
+    "videoUrl": "https://www.youtube.com/watch?v=placeholder-kinabalu",
+    "gallery": [
+      "https://res.cloudinary.com/demo/image/upload/sunshine-center/programs/kinabalu-1.jpg",
+      "https://res.cloudinary.com/demo/image/upload/sunshine-center/programs/kinabalu-2.jpg",
+      "https://res.cloudinary.com/demo/image/upload/sunshine-center/programs/kinabalu-3.jpg",
+      "https://res.cloudinary.com/demo/image/upload/sunshine-center/programs/kinabalu-4.jpg"
+    ],
+    "stats": [
+      { "label": "Độ cao", "value": "4.095m" },
+      { "label": "Thời gian", "value": "4 ngày 3 đêm" },
+      { "label": "Thành viên", "value": "18 người" }
+    ],
+    "featured": true,
+    "order": 2
+  },
+  {
+    "title": "Trại Hè Khai Tâm 2027",
+    "category": "trai-he",
+    "status": "upcoming",
+    "format": "offline",
+    "location": "Khu du lịch sinh thái Ba Vì, Hà Nội",
+    "schedule": "15/06/2027 - 20/06/2027, 5 ngày 4 đêm",
+    "description": "Trại hè dành cho trẻ 7-14 tuổi, giúp các con xây dựng gốc rễ giá trị sống, rèn tính tự lập và kết nối với thiên nhiên qua các hoạt động trải nghiệm thực tế.",
+    "highlights": [
+      "Hoạt động team-building và kỹ năng sinh tồn cơ bản",
+      "Workshop biết ơn - yêu thương dành cho thiếu nhi",
+      "Đêm lửa trại và chia sẻ cảm xúc cùng gia đình"
+    ],
+    "coverImage": "https://res.cloudinary.com/demo/image/upload/sunshine-center/programs/trai-he-cover.jpg",
+    "stats": [
+      { "label": "Độ tuổi", "value": "7-14 tuổi" },
+      { "label": "Thời gian", "value": "5 ngày 4 đêm" },
+      { "label": "Sĩ số", "value": "Tối đa 40 trẻ" }
+    ],
+    "registration": {
+      "isOpen": true,
+      "price": 3500000,
+      "seatsTotal": 40,
+      "seatsTaken": 12,
+      "deadline": "2027-06-01T00:00:00+07:00",
+      "contactPhone": "0935626186"
+    },
+    "featured": true,
+    "order": 3
+  },
+  {
+    "title": "Workshop Khai Phóng Nội Tâm",
+    "category": "workshop",
+    "status": "upcoming",
+    "format": "online",
+    "location": "Online qua Zoom",
+    "schedule": "19h00 Thứ 5 hàng tuần",
+    "description": "Buổi workshop ngắn giúp bạn nhận diện cảm xúc, tư duy giới hạn đang kìm hãm bản thân và bước đầu thực hành các kỹ thuật chữa lành đơn giản.",
+    "highlights": [
+      "Nhận diện niềm tin giới hạn của bản thân",
+      "Thực hành kỹ thuật thở và thư giãn cơ bản",
+      "Giao lưu, chia sẻ cùng cộng đồng Sunshine"
+    ],
+    "coverImage": "https://res.cloudinary.com/demo/image/upload/sunshine-center/programs/workshop-cover.jpg",
+    "registration": {
+      "isOpen": true,
+      "price": 0,
+      "seatsTotal": 100,
+      "seatsTaken": 34,
+      "contactPhone": "0935626186"
+    },
+    "order": 4
+  },
+  {
+    "title": "Off Chữa Lành - Tháng 10",
+    "category": "off-chua-lanh",
+    "status": "upcoming",
+    "format": "offline",
+    "location": "Sunshine Center Office, TP.HCM",
+    "schedule": "25/10/2026, 14h00 - 17h00",
+    "description": "Buổi off-line gặp gỡ, chữa lành tập thể dành cho các học viên và cộng đồng Sunshine Center. Không gian an toàn để chia sẻ, lắng nghe và được chữa lành cùng nhau.",
+    "highlights": [
+      "Hoạt động chữa lành nhóm nhẹ nhàng",
+      "Không gian chia sẻ không phán xét",
+      "Kết nối cộng đồng cùng giá trị sống"
+    ],
+    "coverImage": "https://res.cloudinary.com/demo/image/upload/sunshine-center/programs/off-chua-lanh-cover.jpg",
+    "registration": {
+      "isOpen": true,
+      "price": 200000,
+      "seatsTotal": 30,
+      "seatsTaken": 9,
+      "deadline": "2026-10-20T00:00:00+07:00",
+      "contactPhone": "0935626186"
+    },
+    "order": 5
+  },
+  {
+    "title": "Off Chữa Lành - Tháng 6",
+    "category": "off-chua-lanh",
+    "status": "past",
+    "format": "offline",
+    "location": "Sunshine Center Office, TP.HCM",
+    "schedule": "Đã diễn ra 20/06/2026",
+    "description": "Buổi off-line chữa lành tập thể với hơn 30 học viên tham gia, cùng nhau chia sẻ và chữa lành những tổn thương đã mang theo lâu năm.",
+    "highlights": [
+      "Hơn 30 học viên tham gia chia sẻ trực tiếp",
+      "Nhiều câu chuyện chuyển hoá cảm động được kể lại"
+    ],
+    "coverImage": "https://res.cloudinary.com/demo/image/upload/sunshine-center/programs/off-chua-lanh-past-cover.jpg",
+    "gallery": [
+      "https://res.cloudinary.com/demo/image/upload/sunshine-center/programs/off-chua-lanh-1.jpg",
+      "https://res.cloudinary.com/demo/image/upload/sunshine-center/programs/off-chua-lanh-2.jpg"
+    ],
+    "order": 6
+  }
+]

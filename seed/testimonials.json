@@ -1,0 +1,52 @@
+[
+  {
+    "name": "Chị Thuỷ",
+    "role": "Học viên CNT của Sunshine",
+    "quote": "Bài học của niềm tin tuyệt đối. Biết ơn cô, biết ơn Sunshine.",
+    "story": "Biết ơn cô đã nhắc em kiên định về sự lựa chọn của chính mình và niềm tin tuyệt đối. Sau buổi Coach 1:1 cùng cô về việc lựa chọn giữa hai con đường — xin định cư ở Đài Loan hay về Việt Nam sinh sống — em đã viết mục tiêu xuống bản dự án cuộc đời, dù vẫn còn phân vân chưa tin tưởng tuyệt đối. Qua quá trình học tập Coach Thực Chiến, được cô và các đồng môn đồng hành chữa lành chuyên sâu, đến hôm nay em vô cùng hạnh phúc vì đã hoàn thành mục tiêu một cách dễ dàng — mục tiêu lớn nhất năm, cũng là mục tiêu lớn nhất cuộc đời mà trước kia em nghĩ không bao giờ thành hiện thực. Em sẽ lựa chọn cho mình những mục tiêu lớn hơn nữa.",
+    "image": "",
+    "isFeatured": true,
+    "isActive": true,
+    "order": 1
+  },
+  {
+    "name": "Dương Thị Lan",
+    "role": "Học viên CNT của Sunshine",
+    "quote": "Giờ em thấy công việc của mình rõ ràng hơn, nhẹ nhàng hơn rất nhiều.",
+    "story": "Em giờ đã tốt nghiệp rồi. Trước đây em ôm nhiều gánh nặng, tự làm đau mình vì đặt người khác lên trên chính mình. Bây giờ em nhìn công việc của mình rõ ràng hơn, không còn khó chịu như trước nữa. Em đã giải phóng được những suy nghĩ lãnh đạo cứng nhắc, không còn nghĩ mình phải quan trọng hơn người khác, công việc cũng không còn áp lực phải hoàn thành bằng mọi giá. Giờ em thấy nhẹ nhàng và vui vẻ hơn rất nhiều.",
+    "image": "",
+    "isFeatured": true,
+    "isActive": true,
+    "order": 2
+  },
+  {
+    "name": "Hoàng Hiệp",
+    "role": "Học viên Sunshine Center",
+    "quote": "Biết ơn công việc mình đang làm, áp dụng mỗi sáng trước khi đi làm vi diệu lắm.",
+    "story": "Khi học biết ơn công việc mình đang làm, em áp dụng mỗi sáng trước khi đi làm và thấy vi diệu lắm. Biết ơn những trang sách, biết ơn cô Yến rất rất nhiều.",
+    "image": "",
+    "isFeatured": false,
+    "isActive": true,
+    "order": 3
+  },
+  {
+    "name": "Vũ Thuý Hường",
+    "role": "Phụ huynh em Thảo My",
+    "quote": "Các con đang được cô xây nền móng của tình yêu thương và lòng biết ơn.",
+    "story": "Ngày hôm nay em được đồng hành cùng con trong buổi học của cô Yến, trao giá trị cho các con rất tuyệt vời. Các con đang được cô xây nền móng của tình yêu thương và lòng biết ơn. Biết ơn cô Yến rất nhiều.",
+    "image": "",
+    "isFeatured": true,
+    "isActive": true,
+    "order": 4
+  },
+  {
+    "name": "Tbichyen",
+    "role": "Thành viên cộng đồng CLB Yêu Sách",
+    "quote": "Biết ơn phòng zoom là môi trường để các cha các mẹ giải toả những gánh nặng trên vai.",
+    "story": "Biết ơn phòng zoom là môi trường để các cha các mẹ các bác giải toả những gánh nặng trên vai mà họ đã mang bao năm tháng mà không biết nói với ai. Hãy là cánh tay giúp các cha các mẹ các bác tiếp cận ngành khoa học tâm trí này để họ được sống thảnh thơi, tận hưởng bên con cháu.",
+    "image": "",
+    "isFeatured": false,
+    "isActive": true,
+    "order": 5
+  }
+]

@@ -1,0 +1,172 @@
+[
+  {
+    "courseSlug": "khoa-after-kien-thuc",
+    "category": "coach",
+    "thumbnail": "https://res.cloudinary.com/demo/image/upload/sunshine-center/courses/placeholder.jpg",
+    "instructor": { "name": "Yến Lê", "title": "Cố vấn cấp cao" },
+    "price": 500000,
+    "durationLabel": "2 tháng",
+    "totalDurationLabel": "8 tiếng",
+    "descriptionBullets": [
+      "Chương trình hướng dẫn học viên hệ thống lại toàn bộ quy trình coach chữa lành và coach nâng tầm đã học.",
+      "Giải đáp thắc mắc thông qua các ca coach thực tế, cập nhật tư duy tích cực."
+    ],
+    "benefits": [
+      "Nắm chắc quy trình, tự tin áp dụng vào các ca coach thực tế",
+      "Được giải đáp trực tiếp mọi thắc mắc còn vướng mắc",
+      "Biết cách học và ôn thi để đạt kết quả tốt"
+    ],
+    "curriculum": [
+      {
+        "title": "TỔNG QUAN CHƯƠNG TRÌNH",
+        "lessons": [
+          {
+            "title": "BUỔI 1",
+            "format": "online",
+            "scheduledAt": "2026-10-06T12:00:00+07:00",
+            "durationHours": 2
+          },
+          {
+            "title": "BUỔI 2",
+            "format": "online",
+            "scheduledAt": "2026-10-08T12:00:00+07:00",
+            "durationHours": 2
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseSlug": "khoa-coach-thuc-chien",
+    "category": "coach",
+    "thumbnail": "https://res.cloudinary.com/demo/image/upload/sunshine-center/courses/placeholder.jpg",
+    "instructor": { "name": "Yến Lê", "title": "Cố vấn cấp cao" },
+    "price": 1500000,
+    "durationLabel": "3 tháng",
+    "totalDurationLabel": "16 tiếng",
+    "descriptionBullets": [
+      "Đào sâu kiến thức CNT, CCL và rèn luyện trong môi trường thực chiến để trở thành Coach thực sự.",
+      "Được hướng dẫn, sửa lỗi trực tiếp qua các buổi coach thực hành."
+    ],
+    "benefits": [
+      "Sở hữu năng lực coach thực chiến, sẵn sàng 24/7",
+      "Đánh thức con người khổng lồ bên trong",
+      "Cơ hội đồng hành cùng Sunshine Center"
+    ],
+    "curriculum": [
+      {
+        "title": "COACH THỰC CHIẾN",
+        "lessons": [
+          {
+            "title": "BUỔI 1",
+            "format": "online",
+            "scheduledAt": "2026-10-07T19:00:00+07:00",
+            "durationHours": 4
+          },
+          {
+            "title": "BUỔI 2",
+            "format": "online",
+            "scheduledAt": "2026-10-10T19:00:00+07:00",
+            "durationHours": 4
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseSlug": "khai-tam-dinh-vi",
+    "category": "tre-em",
+    "thumbnail": "https://res.cloudinary.com/demo/image/upload/sunshine-center/courses/placeholder.jpg",
+    "instructor": { "name": "Yến Lê", "title": "Cố vấn cấp cao" },
+    "price": 0,
+    "durationLabel": "1 tháng",
+    "totalDurationLabel": "4 tiếng",
+    "descriptionBullets": [
+      "Giúp trẻ xây dựng gốc rễ giá trị sống, biết đặt và theo đuổi mục tiêu."
+    ],
+    "benefits": [
+      "Trẻ xây dựng gốc cây đời (biết ơn, yêu thương)",
+      "Biết đặt mục tiêu và theo đuổi mục tiêu",
+      "Tạo tính tự lập, chủ động"
+    ],
+    "curriculum": [
+      {
+        "title": "KHAI TÂM ĐỊNH VỊ",
+        "lessons": [
+          {
+            "title": "BUỔI 1",
+            "format": "online",
+            "scheduledAt": "2026-10-04T09:00:00+07:00",
+            "durationHours": 2
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseSlug": "khoa-hoc-khai-phong-ban-than",
+    "category": "chua-lanh",
+    "thumbnail": "https://res.cloudinary.com/demo/image/upload/sunshine-center/courses/placeholder.jpg",
+    "instructor": { "name": "Yến Lê", "title": "Cố vấn cấp cao" },
+    "price": 800000,
+    "durationLabel": "1 tháng",
+    "totalDurationLabel": "4 tiếng",
+    "descriptionBullets": [
+      "Hiểu chính mình, cài lại tư duy, đánh bay niềm tin giới hạn."
+    ],
+    "benefits": [
+      "Mở rộng tầm nhìn, dám ước mơ, dám hành động",
+      "Sở hữu công thức của người thành công",
+      "Được chữa lành, dám hành động để thay đổi"
+    ],
+    "curriculum": [
+      {
+        "title": "KHAI PHÓNG BẢN THÂN",
+        "lessons": [
+          {
+            "title": "BUỔI 1",
+            "format": "online",
+            "scheduledAt": "2026-10-09T19:00:00+07:00",
+            "durationHours": 4
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseSlug": "khoa-hoc-khai-van",
+    "category": "chua-lanh",
+    "thumbnail": "https://res.cloudinary.com/demo/image/upload/sunshine-center/courses/placeholder.jpg",
+    "instructor": { "name": "Yến Lê", "title": "Cố vấn cấp cao" },
+    "price": 1200000,
+    "durationLabel": "2 tháng",
+    "totalDurationLabel": "6 tiếng",
+    "descriptionBullets": [
+      "Sở hữu quy trình coach chữa lành, coach mục tiêu, coach định hướng, coach ước mơ."
+    ],
+    "benefits": [
+      "Được coach 1:1 chạm và chữa lành sâu bên trong",
+      "Sở hữu năng lực coach giúp đỡ gia đình, người thân",
+      "Môi trường rèn luyện miễn phí, cống hiến cùng Sunshine"
+    ],
+    "curriculum": [
+      {
+        "title": "KHAI VẤN - ĐÁNH THỨC MẶT TRỜI BÊN TRONG",
+        "lessons": [
+          {
+            "title": "BUỔI 1",
+            "format": "online",
+            "scheduledAt": "2026-10-07T19:15:00+07:00",
+            "durationHours": 3
+          },
+          {
+            "title": "BUỔI 2",
+            "format": "online",
+            "scheduledAt": "2026-10-14T19:15:00+07:00",
+            "durationHours": 3
+          }
+        ]
+      }
+    ]
+  }
+]

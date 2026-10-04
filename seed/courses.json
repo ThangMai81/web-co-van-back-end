@@ -1,0 +1,104 @@
+[
+  {
+    "title": "Khóa After Kiến Thức - Coach Chữa Lành & Coach Nâng Tầm",
+    "slug": "khoa-after-kien-thuc",
+    "description": "Giúp học viên CCL, CNT hiểu sâu và rõ hơn kiến thức coach chữa lành, coach nâng tầm.",
+    "schedule": "Trưa 12h00 - 14h00, từ thứ 2 đến thứ 6 hàng tuần",
+    "format": "Online",
+    "highlights": [
+      "After tất cả các quy trình coach chữa lành và coach nâng tầm",
+      "Giải đáp thắc mắc cho học viên thông qua các ca coach thực tế",
+      "Chia sẻ cách học, cách thi đạt kết quả tốt"
+    ],
+    "slogan": "Khai tâm mở lối - Tìm lại chính mình - Chạm đỉnh vinh quang",
+    "contact": {
+      "name": "Yến Lê",
+      "phone": "0935626186",
+      "fanpage": "Sunshine Center - Khai Tâm Mở Lối"
+    },
+    "isActive": true
+  },
+  {
+    "title": "Khóa Coach Thực Chiến",
+    "slug": "khoa-coach-thuc-chien",
+    "description": "Đào sâu kiến thức CNT, CCL và rèn luyện trong môi trường thực chiến để trở thành Coach thực sự.",
+    "schedule": "Thứ 3 & Thứ 6: 19h00 tối; Thứ 7 & Chủ nhật: 05h00 sáng",
+    "format": "Online",
+    "highlights": [
+      "Đào sâu kiến thức: Sâu & rộng CNT, CCL",
+      "Môi trường thực chiến: hướng dẫn, sửa lỗi trực tiếp",
+      "Sở hữu năng lực: trở thành Coach thực sự",
+      "Chữa lành & tự hiểu: đánh thức con người khổng lồ bên trong",
+      "Coach bất cứ lúc nào: năng lực sẵn sàng 24/7",
+      "Mang giá trị giúp đời: kiến thức & tài năng",
+      "Cơ hội đồng hành cùng Sunshine Center nếu khát khao"
+    ],
+    "contact": {
+      "name": "Yến Lê",
+      "phone": "0935626186",
+      "fanpage": "Sunshine Center - Khai Tâm Mở Lối"
+    },
+    "isActive": true
+  },
+  {
+    "title": "Khai Tâm Định Vị",
+    "slug": "khai-tam-dinh-vi",
+    "description": "Giúp trẻ xây dựng gốc rễ giá trị sống, biết đặt và theo đuổi mục tiêu.",
+    "schedule": "9h00 sáng Chủ nhật hàng tuần",
+    "format": "Online",
+    "targetAudience": "Trẻ em từ 7-14 tuổi",
+    "highlights": [
+      "Xây dựng gốc cây đời (biết ơn, yêu thương)",
+      "Biết đặt mục tiêu và theo đuổi mục tiêu",
+      "Biết giải quyết những vấn đề đơn giản của cá nhân",
+      "Chủ động học tập, biết công thức học đúng",
+      "Tạo tính tự lập, chủ động",
+      "Biết yêu thương, biết ơn, trân quý những gì đang có",
+      "Sống có ý nghĩa hơn"
+    ],
+    "contact": {
+      "name": "Yến Lê",
+      "phone": "0935626186",
+      "fanpage": "Sunshine Center - Khai Tâm Mở Lối"
+    },
+    "isActive": true
+  },
+  {
+    "title": "Khóa Học Khai Phóng Bản Thân",
+    "slug": "khoa-hoc-khai-phong-ban-than",
+    "description": "Hiểu chính mình, cài lại tư duy, đánh bay niềm tin giới hạn.",
+    "schedule": "19h00 Thứ 5 hàng tuần",
+    "format": "Trực tuyến (Online)",
+    "highlights": [
+      "Hiểu được mình, được cài lại tư duy, đánh bay niềm tin giới hạn",
+      "Mở rộng tầm nhìn, dám ước mơ, dám hành động, dám sống với giá trị thật bên trong",
+      "Sở hữu công thức của người thành công",
+      "Được chữa lành, dám hành động để thay đổi"
+    ],
+    "contact": {
+      "name": "Yến Lê",
+      "phone": "0935626186",
+      "fanpage": "Sunshine Center - Khai Tâm Mở Lối"
+    },
+    "isActive": true
+  },
+  {
+    "title": "Khóa Học Khai Vấn - Đánh Thức Mặt Trời Bên Trong Bạn",
+    "slug": "khoa-hoc-khai-van",
+    "description": "Sở hữu quy trình coach chữa lành, coach mục tiêu, coach định hướng, coach ước mơ.",
+    "schedule": "19h15 tối Thứ 4 hàng tuần",
+    "format": "Online",
+    "highlights": [
+      "Sở hữu quy trình coach chữa lành, coach mục tiêu, coach định hướng, coach ước mơ",
+      "Được coach 1:1 chạm và chữa lành sâu bên trong, tìm lại chính mình",
+      "Sở hữu năng lực coach giúp đỡ gia đình, người thân, người xung quanh",
+      "Môi trường rèn luyện nâng cao năng lực miễn phí, cống hiến cùng Sunshine nếu khát khao"
+    ],
+    "contact": {
+      "name": "Yến Lê",
+      "phone": "0935626186",
+      "fanpage": "Sunshine Center - Khai Tâm Mở Lối"
+    },
+    "isActive": true
+  }
+]

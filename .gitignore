@@ -1,0 +1,6 @@
+# Cả 2 thư mục con đều có node_modules riêng, không cần lưu — npm install lại là đủ
+node_modules/
+.next/
+.env
+.env.local
+*.log
