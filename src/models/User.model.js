@@ -7,6 +7,9 @@ const userSchema = new Schema(
     avatarUrl: { type: String },
     googleId: { type: String },
     password: { type: String },
+    resetPasswordToken: { type: String },
+    resetPasswordExpires: { type: Date },
+    resetPasswordRequestedAt: { type: Date },
   },
   { timestamps: true },
 );

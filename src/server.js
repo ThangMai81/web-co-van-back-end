@@ -1,6 +1,7 @@
+const dotenv = require("dotenv");
+dotenv.config();
 const express = require("express");
 const cors = require("cors");
-const dotenv = require("dotenv");
 const { connectDB } = require("./config/db");
 const programRoutes = require("./routes/program.routes");
 const coreValueRoutes = require("./routes/coreValue.routes");
@@ -10,7 +11,6 @@ const testimonialRoutes = require("./routes/testimonial.routes");
 const inquiryRoutes = require("./routes/inquiry.routes");
 const courseDetailRoutes = require("./routes/courseDetail.routes");
 const cookieParser = require("cookie-parser");
-dotenv.config();
 
 const app = express();
 
