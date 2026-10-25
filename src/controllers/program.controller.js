@@ -21,13 +21,12 @@ function applyUploadedFiles(req, data) {
   const galleryFiles = req.files?.gallery || [];
 
   if (coverFile) {
-    data.coverImage = coverFile.path;
-    data.coverImagePublicId = coverFile.filename;
+    data.coverImage = `${req.protocol}://${req.get("host")}/uploads/programs/${coverFile.filename}`;
   }
   if (galleryFiles.length > 0) {
     data.gallery = [
       ...(data.gallery || []),
-      ...galleryFiles.map((f) => f.path),
+      ...galleryFiles.map((file) => `${req.protocol}://${req.get("host")}/uploads/programs/${file.filename}`),
     ];
   }
   return data;

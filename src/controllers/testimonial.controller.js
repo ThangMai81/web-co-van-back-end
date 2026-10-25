@@ -1,5 +1,4 @@
 const Testimonial = require("../models/Testimonial.model");
-const cloudinary = require("../config/cloudinary");
 
 // GET /api/testimonials - danh sách đầy đủ (cho trang /cau-chuyen-chuyen-hoa)
 exports.getTestimonials = async (req, res) => {
@@ -55,8 +54,7 @@ exports.createTestimonial = async (req, res) => {
   try {
     const data = { ...req.body };
     if (req.file) {
-      data.image = req.file.path; // URL Cloudinary trả về
-      data.imagePublicId = req.file.filename; // public_id để xóa sau này
+      data.image = `${req.protocol}://${req.get("host")}/uploads/testimonials/${req.file.filename}`;
     }
     const testimonial = await Testimonial.create(data);
     res.status(201).json({ success: true, data: testimonial });
@@ -77,11 +75,7 @@ exports.updateTestimonial = async (req, res) => {
 
     const data = { ...req.body };
     if (req.file) {
-      if (testimonial.imagePublicId) {
-        await cloudinary.uploader.destroy(testimonial.imagePublicId);
-      }
-      data.image = req.file.path;
-      data.imagePublicId = req.file.filename;
+      data.image = `${req.protocol}://${req.get("host")}/uploads/testimonials/${req.file.filename}`;
     }
 
     const updated = await Testimonial.findByIdAndUpdate(req.params.id, data, {

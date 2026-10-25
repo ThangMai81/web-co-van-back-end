@@ -1,7 +1,7 @@
 const Inquiry = require("../models/Inquiry.model");
 
 async function createInquiry(req, res) {
-  const { name, phone, age, concern, concernDetail, email, userId } = req.body;
+  const { name, phone, age, concern, concernDetail, email, userId, coachName } = req.body;
 
   if (!name || !phone || !age || !concern || !email) {
     return res.status(400).json({ message: "Vui lòng điền đầy đủ thông tin" });
@@ -14,6 +14,7 @@ async function createInquiry(req, res) {
       age,
       concern,
       concernDetail: concernDetail || "",
+      coachName: coachName || "",
       email,
       userId: userId || null,
     });

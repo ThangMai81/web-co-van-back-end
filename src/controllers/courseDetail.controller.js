@@ -7,8 +7,7 @@ async function upsertCourseDetail(req, res) {
     const data = { ...req.body, course: courseId };
 
     if (req.file) {
-      data.thumbnail = req.file.path;
-      data.thumbnailPublicId = req.file.filename;
+      data.thumbnail = `${req.protocol}://${req.get("host")}/uploads/courses/${req.file.filename}`;
     }
 
     const detail = await CourseDetail.findOneAndUpdate(

@@ -7,7 +7,7 @@ const {
   updateProgram,
   deleteProgram,
 } = require("../controllers/program.controller");
-const createUploader = require("../middleware/cloudinaryUpload");
+const { createUploader } = require("../middleware/upload.middleware");
 
 const upload = createUploader("programs");
 const uploadFields = upload.fields([

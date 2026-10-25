@@ -19,6 +19,7 @@ const inquirySchema = new Schema(
       ],
     },
     concernDetail: { type: String, trim: true, default: "" },
+    coachName: { type: String, trim: true, default: "" },
     email: { type: String, required: true },
     userId: { type: Schema.Types.ObjectId, ref: "User", default: null },
     status: {

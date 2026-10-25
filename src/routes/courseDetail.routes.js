@@ -2,7 +2,7 @@ const { Router } = require("express");
 const {
   upsertCourseDetail,
 } = require("../controllers/courseDetail.controller");
-const createUploader = require("../middleware/cloudinaryUpload");
+const { createUploader } = require("../middleware/upload.middleware");
 
 const uploadThumbnail = createUploader("courses");
 const router = Router();
