@@ -19,6 +19,145 @@ const app = express();
 
 app.set("trust proxy", 1);
 
+const DETAIL_429_DIAGNOSTIC_PATHS = {
+  fansipan: "/api/programs/chinh-phuc-fansipan-noc-nha-dong-duong",
+  course: "/api/courses/khai-tam-dinh-vi",
+};
+const DETAIL_429_DIAGNOSTIC_MAX_WINDOW_MS = 30 * 60 * 1000;
+const DETAIL_429_DIAGNOSTIC_MAX_REQUESTS = 20;
+
+let detail429DiagnosticRequestCount = 0;
+
+function parseDiagnosticUtcInstant(value) {
+  if (
+    typeof value !== "string" ||
+    !/^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}Z$/.test(value)
+  ) {
+    return null;
+  }
+
+  const timestamp = Date.parse(value);
+  if (!Number.isFinite(timestamp)) return null;
+
+  const canonical = new Date(timestamp).toISOString().replace(".000Z", "Z");
+  return canonical === value ? timestamp : null;
+}
+
+function selectedDetail429DiagnosticPath(req) {
+  if (req.method !== "GET") return null;
+
+  const target = process.env.DETAIL_429_DIAG_TARGET;
+  if (target !== "fansipan" && target !== "course") return null;
+
+  const path = DETAIL_429_DIAGNOSTIC_PATHS[target];
+  if (req.path !== path) return null;
+
+  const start = parseDiagnosticUtcInstant(
+    process.env.DETAIL_429_DIAG_START_UTC,
+  );
+  const end = parseDiagnosticUtcInstant(process.env.DETAIL_429_DIAG_END_UTC);
+  if (
+    start === null ||
+    end === null ||
+    end <= start ||
+    end - start > DETAIL_429_DIAGNOSTIC_MAX_WINDOW_MS
+  ) {
+    return null;
+  }
+
+  const now = Date.now();
+  return start <= now && now < end ? path : null;
+}
+
+function readDiagnosticRequestHeader(req, name) {
+  const value = req.get(name);
+  if (value === undefined) return null;
+  if (typeof value !== "string" || Array.from(value).length > 128) {
+    return "invalid";
+  }
+
+  const normalized = value.replace(/^[ \t]+|[ \t]+$/g, "");
+  if (
+    normalized.length === 0 ||
+    /[\u0000-\u001f\u007f-\u009f]/.test(normalized)
+  ) {
+    return "invalid";
+  }
+
+  if (name === "Rndr-Id") {
+    return /^(?:[a-f0-9]{8}-[a-f0-9]{4}-[a-f0-9]{4}|[a-f0-9]{8}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{12})$/i.test(
+      normalized,
+    )
+      ? normalized.toLowerCase()
+      : "invalid";
+  }
+
+  if (name === "CF-Ray") {
+    const match = /^([a-f0-9]{16})-([a-z]{3})$/i.exec(normalized);
+    return match
+      ? `${match[1].toLowerCase()}-${match[2].toUpperCase()}`
+      : "invalid";
+  }
+
+  return "invalid";
+}
+
+function emitDetail429Diagnostic(record) {
+  try {
+    console.info("[detail-429-diagnostic]", record);
+  } catch {
+    // Optional diagnostics must not change the API response behavior.
+  }
+}
+
+app.use((req, res, next) => {
+  const path = selectedDetail429DiagnosticPath(req);
+  if (
+    path === null ||
+    detail429DiagnosticRequestCount >= DETAIL_429_DIAGNOSTIC_MAX_REQUESTS
+  ) {
+    return next();
+  }
+
+  detail429DiagnosticRequestCount += 1;
+  const headers = {
+    "Rndr-Id": readDiagnosticRequestHeader(req, "Rndr-Id"),
+    "CF-Ray": readDiagnosticRequestHeader(req, "CF-Ray"),
+  };
+  const requestFields = {
+    path,
+    method: "GET",
+    ...headers,
+  };
+
+  emitDetail429Diagnostic({
+    event: "detail-429-backend-arrival",
+    time: new Date().toISOString(),
+    ...requestFields,
+  });
+
+  let outcomeRecorded = false;
+  const recordOutcome = (outcome, status) => {
+    if (outcomeRecorded) return;
+    outcomeRecorded = true;
+
+    emitDetail429Diagnostic({
+      event: "detail-429-backend-outcome",
+      time: new Date().toISOString(),
+      ...requestFields,
+      outcome,
+      ...(status === undefined ? {} : { status }),
+    });
+  };
+
+  res.once("finish", () => recordOutcome("finish", res.statusCode));
+  res.once("close", () => {
+    if (!res.writableFinished) recordOutcome("closed_without_finish");
+  });
+
+  next();
+});
+
 // app.use(helmet());
 app.use(
   cors({
