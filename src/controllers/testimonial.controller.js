@@ -5,7 +5,8 @@ exports.getTestimonials = async (req, res) => {
   try {
     const testimonials = await Testimonial.find({ isActive: true })
       .populate("program", "title slug")
-      .sort({ createdAt: -1 });
+      .sort({ createdAt: -1 })
+      .lean();
     res
       .status(200)
       .json({ success: true, count: testimonials.length, data: testimonials });
@@ -20,9 +21,11 @@ exports.getFeaturedTestimonials = async (req, res) => {
     const testimonials = await Testimonial.find({
       isActive: true,
       isFeatured: true,
-    }).sort({
-      createdAt: -1,
-    });
+    })
+      .sort({
+        createdAt: -1,
+      })
+      .lean();
     res
       .status(200)
       .json({ success: true, count: testimonials.length, data: testimonials });

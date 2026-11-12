@@ -2,10 +2,12 @@ const Video = require("../models/Video.model");
 
 async function getVideos(req, res) {
   try {
-    const videos = await Video.find({ isActive: true }).sort({
-      order: 1,
-      createdAt: -1,
-    });
+    const videos = await Video.find({ isActive: true })
+      .sort({
+        order: 1,
+        createdAt: -1,
+      })
+      .lean();
     res.json({ data: videos });
   } catch (err) {
     res.status(500).json({ message: "Lỗi server", error: err.message });

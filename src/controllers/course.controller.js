@@ -11,12 +11,12 @@ async function getCourses(req, res) {
     const courseFilter = { isActive: true };
     if (search) courseFilter.title = { $regex: search, $options: "i" };
 
-    const courses = await Course.find(courseFilter).sort({ createdAt: -1 });
+    const courses = await Course.find(courseFilter).sort({ createdAt: -1 }).lean();
     const courseIds = courses.map((c) => c._id);
 
     const detailFilter = { course: { $in: courseIds } };
     if (category) detailFilter.category = category;
-    const details = await CourseDetail.find(detailFilter);
+    const details = await CourseDetail.find(detailFilter).lean();
     const detailMap = new Map(details.map((d) => [d.course.toString(), d]));
 
     let merged = courses
@@ -59,12 +59,12 @@ async function getCourseBySlug(req, res) {
     const course = await Course.findOne({
       slug: req.params.slug,
       isActive: true,
-    });
+    }).lean();
     if (!course) {
       return res.status(404).json({ message: "Không tìm thấy khóa học" });
     }
 
-    const detail = await CourseDetail.findOne({ course: course._id });
+    const detail = await CourseDetail.findOne({ course: course._id }).lean();
 
     const [reviews, ratingRaw, related] = await Promise.all([
       Review.find({ course: course._id })

@@ -47,7 +47,7 @@ async function getPrograms(req, res) {
     };
     const sortOption = sortMap[sort] || sortMap.newest;
 
-    const programs = await Program.find(filter).sort(sortOption);
+    const programs = await Program.find(filter).sort(sortOption).lean();
     res.json({ data: programs });
   } catch (err) {
     res.status(500).json({ message: "Lỗi server", error: err.message });
@@ -60,7 +60,7 @@ async function getProgramBySlug(req, res) {
     const program = await Program.findOne({
       slug: req.params.slug,
       isActive: true,
-    });
+    }).lean();
     if (!program) {
       return res.status(404).json({ message: "Không tìm thấy chương trình" });
     }

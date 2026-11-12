@@ -29,6 +29,20 @@ app.use(
 
 app.use(express.json());
 
+// Kiểm tra sống nhanh (không chạm database) — dùng cho dịch vụ "ping" giữ server luôn thức
+app.get("/health", (_req, res) => {
+  res.set("Cache-Control", "no-store");
+  res.json({ ok: true, uptime: Math.round(process.uptime()) });
+});
+
+// Dữ liệu công khai đọc nhiều, ít đổi: cho phép trình duyệt/CDN giữ 60 giây
+app.use(["/api/programs", "/api/courses", "/api/coaches", "/api/videos", "/api/testimonials"], (req, res, next) => {
+  if (req.method === "GET") {
+    res.set("Cache-Control", "public, max-age=60, stale-while-revalidate=600");
+  }
+  next();
+});
+
 app.use(cookieParser());
 app.use("/uploads", express.static(path.resolve(__dirname, "../uploads")));
 
@@ -62,8 +76,9 @@ app.use(
 
 const PORT = process.env.PORT || 3001;
 
-connectDB().then(() => {
-  app.listen(PORT, () => {
-    console.log(`Server running on http://localhost:${PORT}`);
-  });
+// Mở cổng ngay để Render nhận server đã sẵn sàng sớm hơn; Mongoose tự xếp hàng truy vấn
+// cho tới khi kết nối database xong (connectDB tự thoát tiến trình nếu kết nối lỗi).
+app.listen(PORT, () => {
+  console.log(`Server running on http://localhost:${PORT}`);
 });
+connectDB();
